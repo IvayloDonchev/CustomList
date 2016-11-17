@@ -32,13 +32,13 @@ namespace GenericList
             first = null;
             last = new Node();
         }
-        public void AddFirst(T x)
+        public void PushFront(T x)
         {
             Node p = new Node(x);
             p.next = first;
             first = p;
         }
-        public void Add(T x) // добавяне в края
+        public void PushBack(T x) // добавяне в края
         {
             Node p = new Node(x);
             if (first == null)
@@ -70,7 +70,7 @@ namespace GenericList
             GenList<T> newList = new GenList<T>();
             for (Node p = first; p != last; p = p.next)
             {
-                newList.Add(p.key);
+                newList.PushBack(p.key);
             }
             return newList;
         }

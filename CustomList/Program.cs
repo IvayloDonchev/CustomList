@@ -9,10 +9,10 @@ namespace CustomList
         static void Main(string[] args)
         {
             GenList<int> l = new GenList<int>();
-            l.Add(1);
-            l.Add(2);
-            l.Add(3);
-            l.Add(4);
+            l.PushBack(1);
+            l.PushBack(2);
+            l.PushBack(3);
+            l.PushBack(4);
             l.Disp();
 
             GenList<int> l2 = (GenList<int>) l.Clone();
